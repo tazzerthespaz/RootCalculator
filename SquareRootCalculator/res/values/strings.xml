@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Root Calculator</string>
+    <string name="action_settings">Settings</string>
+	<string name="btnCalc">Simplify</string>
+	<string name="outerNum">Outer Number:</string>
+	<string name="innerNum">Inner Number (Radicand):</string>
+	<string name="txtIndex">Index:</string>
+	<string name="btnClear">Clear</string>
+</resources>

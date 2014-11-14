@@ -13,7 +13,7 @@ public class Radical {
 	int index;
 	boolean imaginary;
 	
-	public Radical(int in_num, int out_num, int in_index){
+	Radical(int in_num, int out_num, int in_index){
 		if (in_num < 0){
 			imaginary = true;
 			in_num = in_num * (-1);

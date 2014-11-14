@@ -22,28 +22,23 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(android.R.layout.activity_main);
         
         //setting up the variables and Views
-        final EditText editOuterNum = (EditText)findViewById(R.id.editOuterNum);
-        final EditText editInnerNum = (EditText)findViewById(R.id.editInnerNum);
-        final Button btnCalc = (Button)findViewById(R.id.btnCalc);
-        final Button btnClear = (Button)findViewById(R.id.btnClear);
-        final TextView txtSimpRad = (TextView)findViewById(R.id.txtSimpRad);
-        final TextView txtSimpDec = (TextView)findViewById(R.id.txtSimpDec);
-        final TextView txtBefore = (TextView)findViewById(R.id.txtBefore);
-        final EditText editIndex = (EditText)findViewById(R.id.editIndex);
+        final EditText editOuterNum = (EditText)findViewById(android.R.id.editOuterNum);
+        final EditText editInnerNum = (EditText)findViewById(android.R.id.editInnerNum);
+        final Button btnCalc = (Button)findViewById(android.R.id.btnCalc);
+        final Button btnClear = (Button)findViewById(android.R.id.btnClear);
+        final TextView txtSimpRad = (TextView)findViewById(android.R.id.txtSimpRad);
+        final TextView txtSimpDec = (TextView)findViewById(android.R.id.txtSimpDec);
+        final TextView txtBefore = (TextView)findViewById(android.R.id.txtBefore);
+        final EditText editIndex = (EditText)findViewById(android.R.id.editIndex);
         final String inbetweenPos = "√(";
 		final String simp = "Simplified Form: ";
 		final String approx = "About: ";
-		
-		//This is the setup for the out of range toast error
-		Context context = getApplicationContext();
-		CharSequence errorText = "The radicand is out of range.";
-		final Toast errorToast = Toast.makeText(context, errorText, Toast.LENGTH_SHORT);
-		
+				
 		//Setup the add
-		AdView adView = (AdView)this.findViewById(R.id.adView);
+		AdView adView = (AdView)this.findViewById(android.R.id.adView);
 		AdRequest adRequest = new AdRequest.Builder().build();
 		adView.loadAd(adRequest);
 		
